@@ -12,13 +12,13 @@ StartDate varchar(20)
 )
 
 /* UC3 create employee payroll data */
-insert into employee_payroll(Name, Salary, StartDate) values ('Omkar','40000','26/08/2021')
-insert into employee_payroll(Name, Salary, StartDate) values ('Ramesh','50000','25/08/2021')
-insert into employee_payroll(Name, Salary, StartDate) values ('Suresh','60000','27/08/2021')
-insert into employee_payroll(Name, Salary, StartDate) values ('Rita','35000','26/08/2021')
+insert into employee_payroll(Name, Salary, StartDate) values ('Rishabh','40000','26/08/2021')
+insert into employee_payroll(Name, Salary, StartDate) values ('Rahul','50000','25/08/2021')
+insert into employee_payroll(Name, Salary, StartDate) values ('Satish','60000','27/08/2021')
+insert into employee_payroll(Name, Salary, StartDate) values ('Riya','35000','26/08/2021')
 insert into employee_payroll(Name, Salary, StartDate) values ('Priya','25000','26/08/2021')
-insert into employee_payroll(Name, Salary, StartDate) values ('Bill','35000','26/08/2021')
-insert into employee_payroll(Name, Salary, StartDate) values ('Charlie','25000','27/08/2021')
+insert into employee_payroll(Name, Salary, StartDate) values ('Bhanu','35000','26/08/2021')
+insert into employee_payroll(Name, Salary, StartDate) values ('Chotu','25000','27/08/2021')
 
 /* UC4 retrieve all the employee payroll data */
 select * from employee_payroll
@@ -29,8 +29,9 @@ Select Salary,Name from employee_payroll where StartDate between ('25/08/2021') 
 
 /* UC6 add Gender to Employee Payroll Table and Update the Rows */
 ALTER TABLE employee_payroll ADD Gender varchar(6);
-UPDATE employee_payroll set Gender = 'M' where  Name='Omkar' or Name = 'Bill' or Name='Charlie' or Name='Ramesh' or Name='Suresh'
-UPDATE employee_payroll set Gender = 'F' where  Name='Rita' or Name = 'Priya'
+UPDATE employee_payroll set Gender = 'M' where  Name='Rishabh' or Name = 'Bhanu' or Name='Chotu' or Name='Rahul' or Name='Satish'
+UPDATE employee_payroll set Gender = 'F' where  Name='Riya' or Name = 'Priya'
+'
 
 /* UC7 use of Database functions with GroupBy */
 Alter Table employee_payroll
