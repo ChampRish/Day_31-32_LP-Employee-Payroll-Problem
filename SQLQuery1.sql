@@ -12,13 +12,13 @@ StartDate varchar(20)
 )
 
 /* UC3 create employee payroll data */
-insert into employee_payroll(Name, Salary, StartDate) values ('Omkar','40000','26/08/2021')
-insert into employee_payroll(Name, Salary, StartDate) values ('Ramesh','50000','25/08/2021')
-insert into employee_payroll(Name, Salary, StartDate) values ('Suresh','60000','27/08/2021')
-insert into employee_payroll(Name, Salary, StartDate) values ('Rita','35000','26/08/2021')
+insert into employee_payroll(Name, Salary, StartDate) values ('Rishabh','40000','26/08/2021')
+insert into employee_payroll(Name, Salary, StartDate) values ('Rahul','50000','25/08/2021')
+insert into employee_payroll(Name, Salary, StartDate) values ('Satish','60000','27/08/2021')
+insert into employee_payroll(Name, Salary, StartDate) values ('Riya','35000','26/08/2021')
 insert into employee_payroll(Name, Salary, StartDate) values ('Priya','25000','26/08/2021')
-insert into employee_payroll(Name, Salary, StartDate) values ('Bill','35000','26/08/2021')
-insert into employee_payroll(Name, Salary, StartDate) values ('Charlie','25000','27/08/2021')
+insert into employee_payroll(Name, Salary, StartDate) values ('Bhanu','35000','26/08/2021')
+insert into employee_payroll(Name, Salary, StartDate) values ('Chotu','25000','27/08/2021')
 
 /* UC4 retrieve all the employee payroll data */
 select * from employee_payroll
